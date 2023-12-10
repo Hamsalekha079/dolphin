@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>D DOLPHIN - Design</title>
+
+    <style>
+        /* Your existing styles */
+
+        body {
+            background-color: #D3D4D2; /* Replace with your desired color */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(76, 118, 121, 0.7),rgba(76,118,121,0.7)),url(https://t4.ftcdn.net/jpg/05/96/08/29/360_F_596082969_Q3so9OS4X0bk8cSdHdi7VzSeSzHGyTKS.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            position: relative;
+
+        }
+        nav img{
+            width: 150px;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: 13px;
+            font-size: 13px;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0px;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        a{
+            color: #181515;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .row{
+            margin-top: 5%;
+            justify-content: space-between;
+        }
+        h3{
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .product:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 50px;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .text-box p{
+            font-size: 14px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #8c9494;
+            color: #fff;
+            padding: 1em;
+        }
+        #fb
+     {
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
+        margin-left: 500px;
+        border-radius: 50px;
+     }
+     #insta
+     {
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
+        margin-left: 70px;
+        border-radius: 50px;
+     }
+     #mail
+     {
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
+        margin-left: 70px;
+        border-radius: 50px;
+     }
+     
+     #ads
+     {
+        color: #f81302;
+        padding-top: 20px;
+     }
+     .explore_now
+        {
+         
+         width: 250px;
+         height:40px ;
+         background-color:rgb(106, 100, 106);
+         color:white;
+         text-align: center;
+         margin-top: 80px;
+         margin-left: -750px;
+         font-size: 20px;
+         font-style:oblique;
+         padding-top: 10px;
+         border-radius: 50px;
+        }
+       .explore_now:hover
+       {
+        color: rgb(255, 0, 208);
+        text-decoration: underline;
+        background-color: blanchedalmond;
+       }
+       #pics
+       {
+         border-radius: 50px;
+         margin-left: 90px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="webhome.html"><img src="images/logo-1-removebg-preview-e1683393597719.png" alt="D DOLPHIN"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="webhome.html">HOME</a></li>
+                    <li><a href="">DESIGN</a></li>
+                    <li><a href="abotus.html">ABOUTUS</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>D.DOLPHIN PRODUCTS</h1>
+            <p>D.Dolphin will carry traditional, western,
+            trendy, casuals, party wear, to create their
+            unique brand image where you can find
+            everything that you need. The greatest
+            percentage of merchandise will be in
+            apparel, followed by accessories and gifts.
+            Management will rely on customer feedback,
+            suggestions, and sales reports to introduce or
+            eliminate certain brands, styles and sizes.</p>
+            <h2>INDIAN DRESSES</h2>
+            <h2>WESTERN DRESSES</h2>
+       </div>
+   </section>
+   <div style="display: flex;">
+    <marquee direction="right" behavior="scroll" scrollamount="10"   width="100%" bgcolor="white" id="ads"style="padding-top: 20px;"><h2>To Participate in MISS & Mrs Universe</h2> </marquee>
+    <p class="explore_now" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSejfYj-PjUx7R-5IYU8rLPzz9TFKv7ZgX9mFkh41i8ArsACTg/viewform">Apply Now</a></p> 
+   </div>
+   
+   <p id="indian_dresses" ><center><h1>INDIAN DRESSES</h1></center></p>
+   <section>
+        <div class="images">
+            <img src="https://i.pinimg.com/originals/a4/9c/c8/a49cc8494a496450615cebc1acb696a6.jpg" width="300" height="350" alt="" id="pics">
+            <img src="https://i.pinimg.com/736x/be/54/30/be5430a851ed4b5e10dd33a72c660c07.jpg" width="300" height="450" alt="" id="pics">
+            <img src="https://i.pinimg.com/736x/ae/f4/e7/aef4e7546775e1c1a1ad034c7768170d.jpg" width="300" height="350" id="pics">
+        </div>
+
+        <div class="images" style="margin-top: 20px;">
+            <img src="https://i.pinimg.com/736x/b1/76/e8/b176e84746b6f313f3a10bc13d8868be.jpg" width="300" height="350" alt="" id="pics">
+            <img src="https://i.pinimg.com/474x/26/47/06/2647068b06806b9e20af822df8338895.jpg" width="300" height="450" alt="" id="pics">
+            <img src="https://www.bollywoodhungama.com/wp-content/uploads/2022/03/Madhuri-Dixit-looks-ethereal-in-shimmery-blue-ruffled-saree-and-halter-neck-blouse-worth-Rs.-1.1-lakh-by-Gaurav-Gupta-4.jpg" width="300" height="350" id="pics">
+        </div>
+
+    </section>
+
+    <div style="display: flex; margin-top: 70px;" >
+        <marquee direction="right" behavior="scroll" scrollamount="10"   width="100%" bgcolor="white" id="ads"style="padding-top: 20px;"><h2>To Participate in MISS & Mrs Universe</h2> </marquee>
+        <p class="explore_now" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSejfYj-PjUx7R-5IYU8rLPzz9TFKv7ZgX9mFkh41i8ArsACTg/viewform">Apply Now</a></p> 
+       </div>
+       
+       <p id="indian_dresses" ><center><h1>WESTERN DRESSES</h1></center></p>
+       <section>
+            <div class="images">
+                <img src="https://cdn0.weddingwire.in/article/5303/original/1280/jpg/103035-western-dresses-images-2.jpeg" width="300" height="350" alt="" id="pics">
+                <img src="https://cdn0.weddingwire.in/article/5113/original/1280/jpg/103115-western-dresses-images-38.jpeg" width="300" height="450" alt="" id="pics">
+                <img src="https://i.pinimg.com/474x/b0/ea/f2/b0eaf25e90e2044279be08b7be98e8b9.jpg" width="300" height="350" id="pics">
+            </div>
+    
+            <div class="images" style="margin-top: 20px;">
+                <img src="https://cdn0.weddingwire.in/article/5903/original/1280/jpg/103095-western-dresses-images-28.jpeg" width="300" height="350" alt="" id="pics">
+                <img src="https://i.pinimg.com/474x/59/3b/95/593b95e9e55b1ced4e13ca222630fe49.jpg" width="300" height="450" alt="" id="pics">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlEmt2krjKqXafPkcQNIB014yx7SnXJGpLFOoUhGJ6TEQO0qL7CMnEA9TZdFhLOXxsZN0&usqp=CAU" width="300" height="350" id="pics">
+            </div>
+    
+        </section>
+</body>
+<footer style="display: flex;">
+    <div style="display: flex;">
+        <div style="margin-left: -450px;"><h1>&copy; 2023 Fashion Shop  :</h1> </div>
+            <p style="margin-left:100px;margin-top:-10px;"><h2>Contact :</h2>  </p>
+            <p style="padding-left: 10px;"><br>&#9742; +91 7275394960<!-- Phone symbol: &#9742; -->
+            <br> &#9993; d.dolphin.pvt.ltd@gmail.com</p> <!-- Email symbol: &#9993; -->
+            <p style="margin-left:100px;margin-top:-10px;"><h2>Address :</h2>  </p>
+            <p style="padding-left: 10px;padding-top: -20px;"><br>&#127968; House No.186,<br>Gurguj Lajpatnagar,<br>Ward No.13,Near Punjab Sindh Bank, 
+            <br> Sumerpur, Hamirpur <br> Uttar Pradesh (210502),<br>INDIA</p> 
+    </div>
+        <div style="display: flex;margin-top: 200px;margin-left: -1300px;">
+            <p><a href="https://www.facebook.com/profile.php?id=100068623053211&mibextid=ZbWKwL"><img src="https://png.pngtree.com/element_our/md/20180518/md_5aff6081b74c8.jpg" id="fb" ></a></p>
+            <p><a href="https://www.instagram.com/dakshitdolphin/"><img src="https://freepngimg.com/thumb/instagram/118541-logo-instagram-png-download-free.png" id="insta" ></a></p>
+            <p><a href="nitishshivhare@ddolphins.com"><img src="https://static-00.iconduck.com/assets.00/gmail-icon-512x511-fih5xfbp.png" id="mail" ></a></p>
+        </div>    
+</footer>
+
+    
